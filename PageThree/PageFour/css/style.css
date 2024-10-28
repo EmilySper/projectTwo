@@ -20,10 +20,15 @@ body{
 }
 a{
     font-family: "Reenie Beanie", cursive;
+    font-weight: bold;
     font-size: 60px;
     color: rgb(117, 157, 210);
     text-decoration: none;
 }
+a:hover{
+  transform: scale(2);
+  transition-duration: 3s;
+} 
 div {
   font-weight: bold;
   position: relative;
@@ -45,25 +50,4 @@ div {
 @keyframes mymove {
   from {top: -750px;}
   to {top: 0;}
-
-}
-
-/* https://codepen.io/css-support/pen/AjGdmM*/
-
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
-
-p { 
-	font: bold 300% Consolas, Monaco, monospace;
-	border-right: .1em solid rgb(79, 53, 53);
-	/*width: 16.5em; 
-	width: 21ch;
-	margin: 2em 1em;*/
-  width: 5em;
-  width: 11ch;
-  margin: 2em 1em;
-	white-space: nowrap;
-	overflow: hidden;
-	-webkit-animation: typing 2s steps(21, end),
-	           blink-caret .5s step-end infinite alternate;
 }
